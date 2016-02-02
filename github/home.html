@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="MyIcons/flaticon.css" rel="stylesheet" type="text/css">
+    <link href="MyIcons1/flaticon.css" rel="stylesheet" type="text/css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: #4078c0;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .clear-both{
+            clear: both;
+        }
+        /*-header----*/
+        .header{
+            width: 80%;
+            padding: 15px  10%;
+            background-color: #f5f5f5;
+            height: 30px;
+            line-height: 30px;
+        }
+        .header > a{
+            display: block;
+            float: left;
+            font-size: 30px;
+            color: #333;
+        }
+        .header > input{
+            width: 354px;
+            border: none;
+            height: 30px;
+            margin-left: 17px;
+            /* margin-bottom: 18px; */
+            display: block;
+            border-radius: 2px;
+            border: 1px solid rgba(0, 0, 0, 0.11);
+            float: left;
+            box-sizing: border-box;
+            padding-left: 5px;
+        }
+        .header ul{
+            list-style-type: none;
+            width: 280px;
+            float: left;
+            margin-left: 5px;
+        }
+        .header li{
+            display: inline;
+            padding: 7px;
+        }
+        .header > ul >li >a{
+            color: #333;
+        }
+        .header button{
+            padding: 7px;
+        }
+
+
+
+
+        /*-----content ---------*/
+        .content{
+            width: 100%;
+            border-bottom: 1.33px solid rgba(0, 0, 0, 0.21);
+
+        }
+        .content-1{
+            width: 80%;
+
+            height: 380px;
+            padding: 80px 10%;
+            background-color: #333;
+        }
+        .content-1-left{
+            width: 65%;
+            height: 380px;
+            /*background-color: #269abc;*/
+            float: left;
+        }
+        .content-1-left h1{
+            margin-top: 0;
+            padding-top: 50px;
+            font-size: 62px;
+            font-weight: normal;
+            line-height: 1;
+            color: #fff;
+            letter-spacing: -1px;
+        }
+        .content-1-left p{
+            margin: 10px 0 0;
+            font-size: 21px;
+            line-height: 1.5;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: 0.2px;
+        }
+        .content-1-right{
+            width: 35%;
+            height: 380px;
+            /*background-color: #4cae4c;*/
+            float: left;
+        }
+        .content-1-right input{
+            width: 100%;
+            height: 44px;
+            border: white;
+            box-sizing: border-box;
+            padding: 10px;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+        .content-1-right p{
+            color: #767676;
+        }
+
+        /*--content 2--*/
+        .content-2{
+            width: 80%;
+            height: 211px;
+            padding: 80px 10%;
+            background-color: #614381;
+        }
+        .content-2 h1{
+            font-size: 42px;
+            font-weight: 300;
+            line-height: 1.1;
+            text-align: center;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+        .content-2 > h1 >a{
+            font-size: 42px;
+            font-weight: 300;
+            color: #FFF;
+        }
+        .content-2 > a{
+            display: block;
+            width: 262px;
+            margin: 0 auto;
+            margin-top: 15px;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 30px;
+            border-radius: 6px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+            background-color: #1d6ac8;
+            border-radius: 6px;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+        }
+        .content-2 img{
+            display: block;
+            width: 100%;
+            height: 155px;
+        }
+
+
+        /*--content-3----*/
+        .content-3{
+            width: 80%;
+            margin: 0 auto;
+            padding: 80px 10%;
+            border-bottom: 1px solid #e5e5e5
+        }
+        .content-3 h1{
+            text-align: center;
+            font-size: 42px;
+        }
+        .content-3 > p{
+            text-align: center;
+            color: #767676;
+            max-width: 750px;
+            margin: 10px auto 0;
+            font-size: 20px;
+            font-weight: 300;
+            margin-top: 10px;
+            margin-bottom: 40px;
+
+        }
+        .content-3 .item{
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+            padding: 20px 40px 25px;
+
+        }
+
+        .item i::before{
+            margin: 0;
+            font-size: 48px;
+        }
+        .icon{
+            margin: 0 auto 15px;
+            width: 100px;
+            border: 1.33px solid rgba(0, 0, 0, 0.21);
+            border-radius: 50px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .item h3{
+            margin: 15px 0;
+            text-align: center;
+            color: #5a5a5a;
+        }
+        .item p{
+            text-align: center;
+            margin: 0 22.5px;
+            color: #5a5a5a;
+            font-size: 14px;
+        }
+
+
+        /*----content 4--*/
+        .content-4{
+            width: 80%;
+            padding: 80px 10%;
+            text-align: center;
+        }
+        .content-4 h1{
+            font-size: 42px;
+            font-weight: 300;
+        }
+        .content-4 p{
+            color: #767676;
+            margin: 10px auto 0;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.5;
+            width: 64%;
+        }
+        .content-4 > a{
+            display: block;
+            margin-top: 15px;
+            margin: 10px auto 0;
+            width: 111px;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: normal;
+            border-radius: 6px;
+            color: #fff;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+            background-color: #60b044;
+            border-color: #5ca941;
+            cursor: pointer;
+        }
+        .content-4 img{
+            display: block;
+            width: 100%;
+            margin: 40px auto;
+            border-radius: 5px;
+            border: 1px solid rgba(0,0,0,0.25);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+
+
+        /*---footer---*/
+        .footer{
+            width: 80%;
+            padding: 40px 10%;
+            margin: 0 auto;
+            line-height: 16px;
+            font-size: 12px;
+        }
+        .footer a:hover{
+            text-decoration: underline;
+        }
+        .footer-left{
+            width: 40%;
+            float: left;
+        }
+        .footer-mid{
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+        .footer-mid i::before{
+            margin: 0;
+        }
+        .footer-mid i{
+
+        }
+        .footer-right{
+            width: 40%;
+            float: right;
+        }
+        .footer ul{
+            list-style-type: none;
+        }
+        .footer li{
+            margin-left:10px ;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+        <a href="#">
+            <b>Github</b>
+        </a>
+        <input type="text" placeholder="Search Github">
+        <ul>
+            <li><a href="#">Explore</a> </li>
+            <li><a href="#">Features</a> </li>
+            <li><a href="#">Enterprise</a> </li>
+            <li><a href="#">Pricing</a> </li>
+        </ul>
+        <button style="margin-left: 175px ;background-color: #60b044;color: white;border: green;border-radius: 2px">Sign up</button>
+        <button style="background-color: #eee;color: #333;border-radius: 2px;border: 1px solid rgba(0, 0, 0, 0.2)">Sing in</button>
+    </div>
+    <!--end header-->
+
+    <!--Content-->
+    <div class="content">
+        <div class="content-1">
+
+            <!--content 1-->
+            <div class="content-1-left">
+                <h1>Where software is built</h1>
+                <p>Powerful collaboration, code review, and code management for<br>
+                    open source and private projects. Public projects are always <br>free.<br>
+                    <a href="#">Private plans start at $7/mo.</a>
+                </p>
+            </div>
+
+            <div class="content-1-right">
+                <input type="text" placeholder="Pick a username">
+                <input type="email" placeholder="Your email">
+                <input type="password" placeholder="Create a password">
+                <p style="margin-top: 5px;margin-bottom: 10px">Use at least one lowercase letter, one numeral, and <br>seven characters.</p>
+                <input type="button" value="Sign up for Github" style="margin-bottom: 0;color: #fff;background-color: #569e3d">
+                <p style="margin-top: 13px">By clicking "Sign up for GitHub", you agree to our <a href="#">terms of service </a> and <a href="#">privacy policy </a> . We will send you account related emails occasionally.</p>
+
+            </div>
+
+        </div>
+        <!--end content 1-->
+
+        <!--content 2-->
+        <div class="content-2">
+            <h1>
+                <a href="https://enterprise.github.com">Want to use GitHub on your servers?</a>
+            </h1>
+            <a href="#">Learn more about Github Enterprice</a>
+            <img src="gh-enterprise-code.png">
+        </div>
+        <!-- endcontent 2-->
+
+        <!--content 3-->
+        <div class="content-3">
+            <h1>Why you'll love Github</h1>
+            <p><a href="#">Powerful features</a> to make software development more collaborative.</p>
+            <div class="content-3-item">
+                <div class="item">
+                    <div class="icon"><i class="flaticon-notebook88"></i> </div>
+                    <h3>Great collaboration starts with communication.</h3>
+                    <p>Review changes, comment on lines of code, report issues, and<br> plan the future of your project with discussion tools.</p>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="flaticon-business53"></i> </div>
+                    <h3>Friction-less development across teams.</h3>
+                    <p>Work with project collaborators or teams of people in<br> organization accounts to communicate with ease.</p>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="flaticon-arrow68"></i> </div>
+                    <h3>World’s largest open source community.</h3>
+                    <p>Share your projects with the world, get feedback, and contribute <br> to <a href="#">millions of repositories</a> hosted on GitHub.</p>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="flaticon-flash31"></i> </div>
+                    <h3>Do more with powerful integrations.</h3>
+                    <p>Discover applications and tools that <a href="#">integrate with GitHub</a> to help<br> you and your team build software better, together.</p>
+                </div>
+                <div class="clear-both"></div>
+            </div>
+        </div>
+        <!--end content 3-->
+
+        <!--content 4-->
+        <div class="content-4">
+            <h1>Simple collaboration from your desktop</h1>
+            <p>GitHub Desktop is a seamless way to contribute to projects on <a href="#">OS X and Windows operating systems</a> . Create branches, make changes, craft the perfect commit, and deploy—all from a native interface.</p>
+            <a href="#">Find out more</a>
+            <img src="desktop-mac.png">
+        </div>
+    </div>
+    <!--end content-->
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-left">
+            <ul>
+                <li>2015 Github.Inc</li>
+                <li><a href="#">Terms</a> </li>
+                <li><a href="#">Privacy</a> </li>
+                <li><a href="#">Security</a> </li>
+                <li><a href="#">Contact</a> </li>
+                <li><a href="#">Hepl</a> </li>
+            </ul>
+        </div>
+        <div class="footer-mid">
+            <i class="flaticon-github10"></i>
+        </div>
+        <div class="footer-right">
+            <ul style="float: right">
+                <li><a href="#">Status</a> </li>
+                <li><a href="#">API</a> </li>
+                <li><a href="#">Training</a> </li>
+                <li><a href="#">Shop</a> </li>
+                <li><a href="#">Blog</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Pricing</a> </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../jquery-2.1.4.min.js"></script>
+    <script src="../Swiper-3.2.5/dist/js/swiper.min.js"></script>
+    <link href="swiper.min.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(Color-Green.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(Light-Blue-3.png)"></div>
+        <div class="swiper-slide" style="background-image:url(red.png)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+ <script src="swiper.min.js" type="javascript"></script>
+
+<!-- Initialize Swiper -->
+<script>
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        speed: 400,
+        autoplay:3000,
+        speed:3000,
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+</script>
+</body>
+</html>

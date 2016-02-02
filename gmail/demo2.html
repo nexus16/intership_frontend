@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chia layout với float - freetuts.net</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        #container{
+            width: 1000px;      /*Rộng 1000px*/
+            margin: 0px auto;   /*Canh giữa màn hình*/
+            text-align: center; /*Text bên trong canh giữa*/
+            font-size: 30px;    /*Font chữ 30px*/
+            color: #FFF;        /*Font màu trắng*/
+            border: 3px solid black;
+        }
+        #header{
+            height: 100px;      /*Cao 100px*/
+            background: blue;   /*Nền màu xanh*/
+        }
+        .content{
+            float:left;     /*Nằm bên trái*/
+            width: 700px;   /*Rộng 700px*/
+            height: 300px;  /*Cao 300px*/
+            background: red;/*Nền màu đỏ*/
+        }
+        .sidebar{
+            width: 300px;   /*Rộng 300px*/
+            float: right;   /*Nằm bên phải*/
+            height: 340px;  /*Cao 100px*/
+            background: pink;/*Nền màu hồng*/
+        }
+        #footer{
+            background: gray;
+            height: 100px;
+        }
+        .clear{
+            clear:both
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        HEADER
+    </div>
+    <div id="main">
+        <div class="content">
+            MAIN CONTENT
+        </div>
+        <div class="sidebar">
+            SIDEBAR
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="footer">
+        FOOTER
+    </div>
+</div>
+</body>
+</html>

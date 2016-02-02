@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đổi màu nhé</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="../jquery-2.1.4.min.js"></script>
+    <script language="javascript">
+        $(document).ready(function(){
+
+            $('#button').click(function(){
+                var content = $('#content').html();
+                alert(content);
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="content">
+    <h1>Nội dung nè</h1>
+</div>
+<input type="button" value="Lấy nội dung bên trong" id="button"/>
+</body>
+</html>

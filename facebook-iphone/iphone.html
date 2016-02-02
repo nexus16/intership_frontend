@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iphone</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .iphone{
+            width: 300px;
+            height: 600px;
+            background: black;
+            border-radius: 20px;
+            position: relative;
+            margin: 10px auto;
+        }
+        .loa{
+            width: 25%;
+            height: 9px;
+            border-radius: 2px;
+            background: white;
+            margin: 27px 112px;
+            position: absolute;
+
+        }
+        .home{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: white;
+            bottom: 0;
+            border-radius: 44px;
+            margin: 10px 133px;
+        }
+        .screen{
+            position: absolute;
+            width: 94%;
+            height: 80%;
+            background: lightblue;
+            margin: 52px 9px;
+            background-image:url("iphone") ;
+            background-repeat:no-repeat ;
+            background-size: cover;
+        }
+        .screen .list-icon ul{
+            list-style: none;
+        }
+
+        .screen .list-icon li{
+            display: inline-block;
+        }
+        .screen .list-icon div:hover{
+            transform: rotate(270deg);
+            -webkit-transform:rotate(360deg) ;
+            -moz-transform:rotate(270deg) ;
+            -ms-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+            transition: 3s;
+
+        }
+        .screen .list-icon div{
+            width: 55px;
+            height: 60px;
+            background-color: red;
+            margin: 6px;
+            border-radius: 10px;
+        }
+        .nav{
+            background-color: rgba(0, 0, 0, 0.19);
+            margin-top: 24px;
+        }
+        .nav ul{
+            list-style-type: none;
+        }
+        .nav li{
+            display: inline-block;
+        }
+        .nav div{
+            width: 55px;
+            height: 60px;
+            background-color: red;
+            margin: 6px;
+            border-radius: 10px;
+        }
+        .home:hover .screen{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="iphone">
+        <div class="loa"></div>
+        <div class="screen">
+            <div class="list-icon">
+                <ul>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+                    <li><div></div> </li>
+
+
+
+
+
+                </ul>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                    <li><div></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="home"></div>
+    </div>
+</body>
+</html>

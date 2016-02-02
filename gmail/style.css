@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 1200px;
+    overflow-x: auto;
+    height: auto;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.clear-both{
+    clear: both;
+}
+/*---header----*/
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+.header-up{
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #ccc;
+    background-color:rgba(0, 0, 0, 0.13);
+}
+.logo{
+    height: 100%;
+    width: 15%;
+    float: left;
+}
+.logo img{
+    width: 60%;
+    margin:8px 13%;
+}
+.search{
+    float: left;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search .input-search{
+    border: none;
+    height: 30px;
+    width: 570px;
+
+}
+.search .button::before{
+    margin: 0;
+}
+
+
+
+.mail{
+    float: right;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.avata-mail{
+    width: 30px;
+    height: 30px;
+    float: right;
+    border: 1px solid rgba(0, 0, 0, 0.41);
+    border-radius: 15px;
+}
+.mail i::before{
+    margin: 0;
+}
+.mail-1{
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.mail-1 i{
+    padding: 0 10px;
+}
+.mail span{
+    ddisplay: block;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    font-size: 80%;
+    margin-right: 15px;
+    margin-top: 1px;
+}
+
+
+
+.header-down{
+    height: 50%;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+}
+.header-down-left{
+    float: left;
+    width: 15%;
+    height: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+.header-down-left > ul{
+    display: none;
+}
+
+.header-down-mid{
+    float: left;
+    width: 40%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.tuy-chon{
+    float: left;
+    height: 28px;
+    width: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.refesh{
+    float: left;
+    height: 28px;
+    width: 70px;
+    margin-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.tac-vu-khac{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    background-color: rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 2px 5px;
+}
+.tac-vu-khac p{
+    line-height: 23px;
+    font-size: 80%;
+}
+
+.header-down-right{
+    float: right;
+    width: 40%;
+    height: 30px;
+    margin-top: 10px;
+}
+.header-down-right a{
+    color: black;
+}
+.header-down-right ul{
+    list-style-type: none;
+    float: right;
+    margin-right: 24px;
+}
+.header-down-right i::before{
+    margin: 0px;
+}
+.header-down-right li{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.header-down-right li:nth-child(1){
+    background-color: white;
+}
+
+
+
+/*----nav-------*/
+.nav{
+    width: 15%;
+    height: 550px;
+
+    float: left;
+    position: fixed;
+    top: 110px;
+    left: 0;
+}
+
+.nav button{
+    display: block;
+    background-color: red;
+    width: 100px;
+    padding: 0 10px;
+    height: 29px;
+    margin-left: 23px;
+    border: none;
+}
+.nav ul{
+    margin-left: 13px;
+    margin-top: 10px;
+}
+.nav li{
+    width: 150px;
+    height: 16px;
+    padding: 6px;
+    padding-left: 10px;
+}
+.nav li:hover{
+    background-color: rgba(0, 0, 0, 0.21);
+}
+.tro-chuyen{
+    width: 155px;
+    margin: 10px  23px;
+    box-sizing: border-box;
+    padding: 7px 0 ;
+    border-top: 1.5px solid rgba(0, 0, 0, 0.22);
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.22);
+}
+
+.avata {
+    width: 29px;
+    height: 29px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.41);
+    border-radius: 15px;
+}
+.avata img{
+    width: 29px;
+    height: auto;
+}
+.tro-chuyen p{
+    float: left;
+    line-height: 30px;
+    margin-left: 3px;
+}
+.tro-chuyen-search{
+    float: right;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: rgba(0, 0, 0, 0.18);
+    border-radius: 2px;
+}
+.tro-chuyen-search i::before{
+    margin: 0;
+}
+.cuoc-tro-chuyen{
+    width: 155px;
+    margin: 30px  23px;
+    text-align: center;
+    font-size: 80%;
+}
+.cuoc-tro-chuyen img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.cuoc-tro-chuyen span{
+    display: block;
+}
+.cuoc-tro-chuyen a{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.nav-bottom{
+    width: 155px;
+    margin: 88px  23px 0;
+    text-align: center;
+    line-height: 30px;
+    border-top:1px solid rgba(0, 0, 0, 0.18) ;
+
+}
+.nav-bottom div{
+    display: inline;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: rgba(0, 0, 0, 0.18);
+    border-radius: 2px;
+
+}
+.nav-bottom i::before{
+    margin: 0;
+
+}
+
+
+/*---content------*/
+.content{
+    width: 85%;
+    top: 100px;
+    left: 15%    ;
+    position: absolute;
+    z-index: -1;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.tab-content{
+    width: 98%;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.41);
+}
+.tab-content > div {
+    float: left;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.18);
+}
+.item{
+    width: 19.473%;
+    border: 1px solid rgba(0, 0, 0, 0.41);
+    height: 40px;
+    border-right: none;
+}
+.plus{
+    width: 21px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.41);
+    text-align: center;
+}
+
+.email{
+    width: 98%;
+    height: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.41);
+    margin-top: 5px;
+}
+.email i::before{
+    margin: 0;
+}
+.email p{
+    float: left;
+}
+.email .icon{
+    width: 10%;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+.icon i:nth-child(2){
+    margin-left: 10px;
+}
+.ten{
+    width: 20%;
+}
+.content-mail{
+    width: 65%;
+}
+.thoi-gian{
+    width: 5%;
+}
+.footer-content{
+    width: 98%;
+    margin-top: 10px;
+    font-size: 80%;
+}
+
+.footer-content a{
+    text-decoration: underline;
+}
+.footer-content > p{
+    float: left;
+}
+.footer-content p:nth-child(2){
+    margin-left: 245px;
+}
+.footer-content p:last-child{
+    float: right;
+}

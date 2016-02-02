@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/flaticon.css" rel="stylesheet" type="text/css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            background-color: #e9eaed;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .clear-both{
+            clear: both;
+        }
+        i::before{
+            margin: 0;
+        }
+        /*-----header------*/
+        .header{
+            width: 100%;
+            height: 40px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color:#3F5C9A;
+            box-sizing: border-box;
+            padding-top: 7px;
+        }
+
+        .header .logo{
+            width: 25px;
+            height: 25px;
+            float: left;
+            margin-left: 30px;
+
+        }
+        .logo img{
+            width: 100%;
+            height: auto;
+        }
+        .seach{
+            width: 35%;
+            height: 25px;
+            background-color: #4D90FE;
+            float: left;
+            margin-left: 11px;
+        }
+        .seach .form{
+            width: 90%;
+            height: 25px;
+            float: left;
+        }
+        .seach input{
+            height: 25px;
+            width: 100%;
+            border: none;
+        }
+        .seach .buttom{
+            width: 10%;
+            background-color: #66A523;
+            height: 25px;
+            float: left;
+            box-sizing: border-box;
+            padding-top: 2px;
+        }
+        .seach i::before{
+            margin: 0;
+        }
+        .seach i{
+            padding: 0 10px;
+        }
+
+        .header-nav {
+            float: left;
+            height: 25px;
+            width: 50%;
+            margin-left: 100px;
+        }
+        .header-nav ul{
+            list-style-type: none;
+            float: left;
+        }
+        .header-nav li{
+            float: left;
+            height: 25px;
+        }
+        .header-nav img{
+            width: 25px;
+            height: auto;
+        }
+        .header-nav a{
+            line-height: 25px;
+            color: white;
+        }
+        .hover{
+            padding: 4px 10px;
+        }
+        .hover:hover{
+            background-color: rgba(0, 0, 0, 0.26);
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px; ;
+        }
+
+
+
+
+
+        /*------navi--------*/
+        .navi{
+            width: 20%;
+            height: 1000px;
+            position: absolute;
+            left: 0;
+            top: 50px;
+
+            box-sizing: border-box;
+            padding-left: 50px;
+            font-size: small;
+        }
+        .navi li{
+            margin: 10px 0;
+            padding: 5px 10px 5px;
+            width: 80%;
+       }
+        .navi a{
+            color: black;
+            margin-left: 5px;
+        }
+        .navi li:hover{
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        .navi i:before{
+            font-size: 80%;
+            margin: 0;
+        }
+
+
+        /*------content-------*/
+        .content{
+            width: 40%;
+            height: 1500px;
+            position: absolute;
+            left: 20%;
+            top: 50px;
+
+        }
+
+
+
+        .cap-nhap-thong-tin{
+            width: 100%;
+            height: 155px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            box-shadow: 0px 1px 5px #888888;
+            background-color: white;
+
+        }
+        .cap-nhap-thong-tin > ul{
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+        .cap-nhap-thong-tin li{
+            width: 33%;
+            display: inline;
+        }
+        .cap-nhap-thong-tin a::before{
+            margin: 0;
+        }
+
+
+
+
+
+        .status{
+            background-color: white;
+            width: 100%;
+            height: 75px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+        }
+        .status::before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            transform: rotate(45deg);
+            border: 1px solid rgba(0, 0, 0, 0.11);
+            top:32px;
+            left: 90px;
+        }
+        .status::after{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 14.14213562px;
+            height: 7.08px;
+            background-color:#ffffff;
+            border-top: 1px solid #FFFFFF;
+            top: 38px;
+            left: 89px;
+        }
+        .status img{
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: block;
+            float: left;
+        }
+        .status form{
+            float: left;
+            width: 50%;
+            margin-left: 20px;
+            margin-top: 25px;
+        }
+        .status input{
+            border: none;
+            font-size: 110%;
+        }
+        .status-buttom{
+            width: 100%;
+            height: 30px;
+        }
+        .status-buttom-left{
+            float: left;
+            width: 50%;
+            height: 30px;
+
+            position: relative;
+        }
+        .status-buttom-left > ul > li{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            box-sizing: border-box;
+            padding: 10px;
+            position: relative;
+        }
+
+
+
+
+
+        .item-up-1{
+            width: 200px;
+            height: 20px;
+            position: absolute;
+            top:-24px;
+            left: 0;
+            background-color: black;
+            color: white;
+            font-size: 90%;
+            display: none;
+        }
+        .mui-ten-1{
+            width: 10px;
+            height: 10px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: -10px;
+            left: 16px;
+            background-color: black;
+            display: none;
+        }
+        .item-up-2{
+            width: 200px;
+            height: 20px;
+            position: absolute;
+            top:-24px;
+            left: 0;
+            background-color: black;
+            color: white;
+            font-size: 90%;
+            display: none;
+        }
+        .mui-ten-2{
+            width: 10px;
+            height: 10px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: -10px;
+            left: 16px;
+            background-color: black;
+            display: none;
+        }
+        .item-up-3{
+            width: 200px;
+            height: 20px;
+            position: absolute;
+            top:-24px;
+            left: 0;
+            background-color: black;
+            color: white;
+            font-size: 90%;
+            display: none;
+        }
+        .mui-ten-3{
+            width: 10px;
+            height: 10px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: -10px;
+            left: 16px;
+            background-color: black;
+            display: none;
+        }
+        .item-up-4{
+            width: 200px;
+            height: 20px;
+            position: absolute;
+            top:-24px;
+            left: 0;
+            background-color: black;
+            color: white;
+            font-size: 90%;
+            display: none;
+        }
+        .mui-ten-4{
+            width: 10px;
+            height: 10px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: -10px;
+            left: 16px;
+            background-color: black;
+            display: none;
+        }
+        .status-buttom-left > ul > li :nth-child(1):hover .item-up-1{
+            display: block;
+        }
+        .status-buttom-left li:hover{
+            background-color: rgba(0, 0, 0, 0.11);
+        }
+        .status-buttom-left i::before{
+            margin: 0;
+        }
+        .hover-item-1:hover .item-up-1,.hover-item-1:hover .mui-ten-1{
+            display: block;
+        }
+        .hover-item-2:hover .item-up-2,.hover-item-2:hover .mui-ten-2{
+            display: block;
+        }
+        .hover-item-3:hover .item-up-3,.hover-item-3:hover .mui-ten-3{
+            display: block;
+        }
+        .hover-item-4:hover .item-up-4,.hover-item-4:hover .mui-ten-4{
+            display: block;
+        }
+
+        .status-buttom-right{
+            float: left;
+            width: 50%;
+            height: 30px;
+
+        }
+        .status-buttom-right button{
+            padding: 2px 10px;
+            margin-left: 95px;
+            margin-top: 10px;
+        }
+
+        .noi-dung{
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            padding-bottom: 5px;
+            box-shadow: 0px 1px 3px #888888;
+            background-color: white;
+
+        }
+
+        .noi-dung-status{
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .thong-tin{
+            width: 100%;
+            height: 50px;
+            margin: 10px auto;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        .thong-tin img{
+            display: block;
+            float: left;
+            width: 40px;
+            height: 40px;
+        }
+        .thong-tin span{
+            display: block;
+            float: left;
+            margin-left: 5px;
+        }
+        .noi-dung-status > p{
+            width: 98%;
+            box-sizing: border-box;
+            margin: 5px;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .noi-dung-status ul{
+            width: 100%;
+            padding: 5px 0;
+        }
+        .noi-dung-status li{
+            display: inline;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+        .noi-dung-status a:hover{
+            text-decoration: underline;
+        }
+        .binh-luan{
+            width: 100%;
+            height: auto;
+
+        }
+        .binh-luan p{
+            box-sizing: border-box;
+            padding: 5px;
+        }
+
+        .noi-dung-binh-luan img{
+            width: 30px;
+            height: 30px;
+            display: block;
+            float: left;
+            margin-left: 5px;
+        }
+        .viet-binh-luan{
+            margin-left: 40px;
+            width: 470px;
+            height: 28px;
+            margin-bottom: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .viet-binh-luan input{
+            border: none;
+            width: 91%;
+            margin-left: 5px;
+            margin-top: 7px;
+            display: block;
+            float: left;
+        }
+        .viet-binh-luan i:before{
+            margin: 0;
+        }
+        .viet-binh-luan i{
+            display: block;
+            float: left;
+            margin-top: 3px;
+        }
+
+
+
+
+
+        .advertise{
+            width: 20%;
+            height: 500px;
+            position: absolute;
+            left: 60%;
+            top: 50px;
+            box-sizing: border-box;
+            margin-left: 10px;
+            background-color: orange;
+        }
+
+
+        /*------news-chat---*/
+        .news-chat{
+            width: 18%;
+            height: 620px;
+            position: fixed;
+            right: 0;
+            top: 40px;
+            box-sizing: border-box;
+            margin-left: 0px;
+            border-left: 1px solid rgba(0, 0, 0, 0.2);
+            background-color: white;
+
+        }
+        .news{
+            width: 100%;
+            height: 400px;
+            overflow-y: scroll;
+            overflow-x:hidden;
+        }
+        .news-item{
+            width: 96%;
+            height: auto;
+            box-sizing: border-box;
+            margin: 0 5px;
+            padding: 2px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .news-item:hover{
+            background-color:rgba(0, 0, 0, 0.2);
+        }
+        .news-item img{
+            float: left;
+            width: 30px;
+            height: 30px;
+        }
+        .news-item p{
+            width: 170px;
+            float: left;
+            margin-left: 5px;
+        }
+        .chat{
+            width: 100%;
+            height: 200px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            padding: 10px 5px 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .chat-item{
+            width: 100%;
+            height: auto;
+            padding: 5px;
+        }
+        .chat-item:hover {
+            background-color: rgba(0, 0, 0, 0.11);
+        }
+        .chat-item img{
+            display: block;float: left;
+            width: 30px;
+            height: 30px;
+        }
+        .chat-item span{
+            display: block;
+            float: left;
+            line-height: 30px;
+            margin-left: 5px;
+        }
+        .seach-news-chat{
+            width: 100%;
+            box-sizing: border-box;
+            margin: 5px;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            font-size: 60%;
+        }
+        .seach-news-chat i::before{
+            margin: 0;
+        }
+        .seach-news-chat i , .seach-news-chat input{
+            display: block;
+            float: left;
+            margin-right: 5px;
+        }
+        .seach-news-chat input{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="#"><img src="img/logo.jpg"></a>
+        </div>
+        <div class="seach">
+            <div class="form">
+                <form>
+                    <input type="text" style="width: 100%">
+                </form>
+            </div>
+            <div class="buttom"><i class="flaticon-magnifying-glass16"></i> </div>
+            <div class="clear-both"></div>
+        </div>
+        <div class="header-nav">
+            <ul>
+                <li><a href="#"><img src="img/logo.jpg"></a> </li>
+                <li><a href="#" class="hover"> Linh</a> </li>
+                <li><a href="#" class="hover">Trang chu</a> </li>
+                <li><a href="#" class="hover">Tim ban be</a> </li>
+                <li><a href="#"><i class="flaticon-friend1"></i></a> </li>
+                <li><a href="#"></a> <i class="flaticon-speechbubbles2"></i> </li>
+                <li><a href="#"></a> <i class="flaticon-world91"></i> </li>
+                <li><a href="#"></a> <i class="flaticon-lock24"></i> </li>
+                <li><a href="#"></a> <i class="flaticon-arrow486"></i> </li>
+            </ul>
+        </div>
+    </div>
+    <!--end header-->
+
+
+    <!--navi-->
+    <div class="navi">
+        <ul>
+            <li><a href="#">Dang Hoang Linh</a></li>
+            <li> <i class="flaticon-speechbubbles2"></i><a href="#"> Chinh sua trang ca nhan</a></li>
+        </ul>
+        <p><span>YEU THICH</span></p>
+        <ul>
+            <li><i class="flaticon-speechbubbles2"></i><a href="#">Bang tin</a> </li>
+            <li><i class="flaticon-speechbubbles2"></i><a href="#">Tin nhan</a> </li>
+            <li><i class="flaticon-speechbubbles2"></i><a href="#">HESDPI K57</a> </li>
+            <li><i class="flaticon-speechbubbles2"></i><a href="#">Post link</a> </li>
+            <li><i class="flaticon-speechbubbles2"></i><a href="#">HEDSPI K57</a> </li>
+        </ul>
+        <p><span>Ung dung</span></p>
+        <ul>
+            <li><i class="flaticon-speechbubbles2"></i>a href="#">Tro choi</a> </li>
+            <li><i class="flaticon-speechbubbles2"></i><a href="#">Ngay nay nam xua</a> </li>
+            <li><i class="flaticon-speechbubbles2"></i><a href="#">Big one</a> </li>
+            <li><i class="flaticon-speechbubbles2"></i><a href="#">Crazy japanese</a> </li>
+            <li><i class="flaticon-speechbubbles2"></i><a href="#">Photo love</a> </li>
+        </ul>
+    </div>
+    <!--end navi-->
+
+    <!--content-->
+    <div class="content">
+
+        <!--cap nhap thong tin-->
+        <div class="cap-nhap-thong-tin">
+            <ul>
+                <li><a href="#"><i class="flaticon-facebook29"></i><span>Cap nhap trang thai</span></a> </li>
+                <li><a href="#"><i class="flaticon-facebook29"></i>Them anh/video </a> </li>
+                <li><a href="#"><i class="flaticon-facebook29"></i>Tao album anh </a> </li>
+            </ul>
+            <div class="status">
+                <img src="iphone">
+                <form>
+                    <input type="text" placeholder="Ban dang nghi gi ?">
+                </form>
+            </div>
+            <div class="status-buttom">
+                <div class="status-buttom-left">
+                    <ul>
+                        <li class="hover-item-1">
+                            <a href="#"><i class="flaticon-facebook29"></i> </a>
+                            <div class="item-up-1">Them anh vao bai viet cua ban</div>
+                            <div class="mui-ten-1"></div>
+                        </li>
+                        <li class="hover-item-2">
+                            <a href="#"><i class="flaticon-facebook29"></i> </a>
+                            <div class="item-up-2">Gan the moi nguoi</div>
+                            <div class="mui-ten-2"></div>
+                        </li>
+                        <li class="hover-item-3">
+                            <a href="#"><i class="flaticon-facebook29"></i> </a>
+                            <div class="item-up-3">them viec dang lam  cua ban</div>
+                            <div class="mui-ten-3"></div>
+                        </li>
+                        <li class="hover-item-4">
+                            <a href="#"><i class="flaticon-facebook29"></i> </a>
+                            <div class="item-up-4">them vi tri cua ban</div>
+                            <div class="mui-ten-4"></div>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="status-buttom-right">
+                    <button>Moi nguoi</button>
+                    <button style="margin-left: 5px;background-color: #3F5C9A;color: white;border: blue;padding: 4px 10px">Dang</button>
+                </div>
+            </div>
+        </div>
+        <!--end cap nhap thong tin-->
+
+        <!--noi dung-->
+        <div class="noi-dung">
+            <div class="noi-dung-status">
+                <div class="thong-tin">
+                    <img src="iphone">
+                    <span>Ngoc Anhh</span>
+                </div>
+                <p>Nhìn cái mặt chả còn giống cái mặt nữa. Thảm quá. :(((
+                    Làm sao nhẵn mịn trắng sáng như ngày xưa
+                </p>
+                <ul style="font-size: 80%">
+                    <li><a href="#"><b>Thich</b></a> </li>
+                    <li><a href="#"><b>Binh luan</b></a> </li>
+                    <li><a href="#"><b>Chia se</b></a> </li>
+                </ul>
+            </div>
+            <div class="binh-luan">
+                <p style="font-size: 80%"><a href="#">Ngoc Anhh</a> va <a href="#">10 nguoi khac</a> thich noi dung nay </p>
+                <div class="noi-dung-binh-luan">
+                    <img src="iphone">
+                    <div class="viet-binh-luan">
+                        <input type="text" placeholder="viet binh luan">
+                        <i class="flaticon-facebook29"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="noi-dung">
+            <div class="noi-dung-status">
+                <div class="thong-tin">
+                    <img src="iphone">
+                    <span>Ngoc Anhh</span>
+                </div>
+                <p>Nhìn cái mặt chả còn giống cái mặt nữa. Thảm quá. :(((
+                    Làm sao nhẵn mịn trắng sáng như ngày xưa
+                </p>
+                <ul style="font-size: 80%">
+                    <li><a href="#"><b>Thich</b></a> </li>
+                    <li><a href="#"><b>Binh luan</b></a> </li>
+                    <li><a href="#"><b>Chia se</b></a> </li>
+                </ul>
+            </div>
+            <div class="binh-luan">
+                <p style="font-size: 80%"><a href="#">Ngoc Anhh</a> va <a href="#">10 nguoi khac</a> thich noi dung nay </p>
+                <div class="noi-dung-binh-luan">
+                    <img src="iphone">
+                    <div class="viet-binh-luan">
+                        <input type="text" placeholder="viet binh luan">
+                        <i class="flaticon-facebook29"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="noi-dung">
+            <div class="noi-dung-status">
+                <div class="thong-tin">
+                    <img src="iphone">
+                    <span>Ngoc Anhh</span>
+                </div>
+                <p>Nhìn cái mặt chả còn giống cái mặt nữa. Thảm quá. :(((
+                    Làm sao nhẵn mịn trắng sáng như ngày xưa
+                </p>
+                <ul style="font-size: 80%">
+                    <li><a href="#"><b>Thich</b></a> </li>
+                    <li><a href="#"><b>Binh luan</b></a> </li>
+                    <li><a href="#"><b>Chia se</b></a> </li>
+                </ul>
+            </div>
+            <div class="binh-luan">
+                <p style="font-size: 80%"><a href="#">Ngoc Anhh</a> va <a href="#">10 nguoi khac</a> thich noi dung nay </p>
+                <div class="noi-dung-binh-luan">
+                    <img src="iphone">
+                    <div class="viet-binh-luan">
+                        <input type="text" placeholder="viet binh luan">
+                        <i class="flaticon-facebook29"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="noi-dung">
+            <div class="noi-dung-status">
+                <div class="thong-tin">
+                    <img src="iphone">
+                    <span>Ngoc Anhh</span>
+                </div>
+                <p>Nhìn cái mặt chả còn giống cái mặt nữa. Thảm quá. :(((
+                    Làm sao nhẵn mịn trắng sáng như ngày xưa
+                </p>
+                <ul style="font-size: 80%">
+                    <li><a href="#"><b>Thich</b></a> </li>
+                    <li><a href="#"><b>Binh luan</b></a> </li>
+                    <li><a href="#"><b>Chia se</b></a> </li>
+                </ul>
+            </div>
+            <div class="binh-luan">
+                <p style="font-size: 80%"><a href="#">Ngoc Anhh</a> va <a href="#">10 nguoi khac</a> thich noi dung nay </p>
+                <div class="noi-dung-binh-luan">
+                    <img src="iphone">
+                    <div class="viet-binh-luan">
+                        <input type="text" placeholder="viet binh luan">
+                        <i class="flaticon-facebook29"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="noi-dung">
+            <div class="noi-dung-status">
+                <div class="thong-tin">
+                    <img src="iphone">
+                    <span>Ngoc Anhh</span>
+                </div>
+                <p>Nhìn cái mặt chả còn giống cái mặt nữa. Thảm quá. :(((
+                    Làm sao nhẵn mịn trắng sáng như ngày xưa
+                </p>
+                <ul style="font-size: 80%">
+                    <li><a href="#"><b>Thich</b></a> </li>
+                    <li><a href="#"><b>Binh luan</b></a> </li>
+                    <li><a href="#"><b>Chia se</b></a> </li>
+                </ul>
+            </div>
+            <div class="binh-luan">
+                <p style="font-size: 80%"><a href="#">Ngoc Anhh</a> va <a href="#">10 nguoi khac</a> thich noi dung nay </p>
+                <div class="noi-dung-binh-luan">
+                    <img src="iphone">
+                    <div class="viet-binh-luan">
+                        <input type="text" placeholder="viet binh luan">
+                        <i class="flaticon-facebook29"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="noi-dung">
+            <div class="noi-dung-status">
+                <div class="thong-tin">
+                    <img src="iphone">
+                    <span>Ngoc Anhh</span>
+                </div>
+                <p>Nhìn cái mặt chả còn giống cái mặt nữa. Thảm quá. :(((
+                    Làm sao nhẵn mịn trắng sáng như ngày xưa
+                </p>
+                <ul style="font-size: 80%">
+                    <li><a href="#"><b>Thich</b></a> </li>
+                    <li><a href="#"><b>Binh luan</b></a> </li>
+                    <li><a href="#"><b>Chia se</b></a> </li>
+                </ul>
+            </div>
+            <div class="binh-luan">
+                <p style="font-size: 80%"><a href="#">Ngoc Anhh</a> va <a href="#">10 nguoi khac</a> thich noi dung nay </p>
+                <div class="noi-dung-binh-luan">
+                    <img src="iphone">
+                    <div class="viet-binh-luan">
+                        <input type="text" placeholder="viet binh luan">
+                        <i class="flaticon-facebook29"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="noi-dung">
+            <div class="noi-dung-status">
+                <div class="thong-tin">
+                    <img src="iphone">
+                    <span>Ngoc Anhh</span>
+                </div>
+                <p>Nhìn cái mặt chả còn giống cái mặt nữa. Thảm quá. :(((
+                    Làm sao nhẵn mịn trắng sáng như ngày xưa
+                </p>
+                <ul style="font-size: 80%">
+                    <li><a href="#"><b>Thich</b></a> </li>
+                    <li><a href="#"><b>Binh luan</b></a> </li>
+                    <li><a href="#"><b>Chia se</b></a> </li>
+                </ul>
+            </div>
+            <div class="binh-luan">
+                <p style="font-size: 80%"><a href="#">Ngoc Anhh</a> va <a href="#">10 nguoi khac</a> thich noi dung nay </p>
+                <div class="noi-dung-binh-luan">
+                    <img src="iphone">
+                    <div class="viet-binh-luan">
+                        <input type="text" placeholder="viet binh luan">
+                        <i class="flaticon-facebook29"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="noi-dung">
+            <div class="noi-dung-status">
+                <div class="thong-tin">
+                    <img src="iphone">
+                    <span>Ngoc Anhh</span>
+                </div>
+                <p>Nhìn cái mặt chả còn giống cái mặt nữa. Thảm quá. :(((
+                    Làm sao nhẵn mịn trắng sáng như ngày xưa
+                </p>
+                <ul style="font-size: 80%">
+                    <li><a href="#"><b>Thich</b></a> </li>
+                    <li><a href="#"><b>Binh luan</b></a> </li>
+                    <li><a href="#"><b>Chia se</b></a> </li>
+                </ul>
+            </div>
+            <div class="binh-luan">
+                <p style="font-size: 80%"><a href="#">Ngoc Anhh</a> va <a href="#">10 nguoi khac</a> thich noi dung nay </p>
+                <div class="noi-dung-binh-luan">
+                    <img src="iphone">
+                    <div class="viet-binh-luan">
+                        <input type="text" placeholder="viet binh luan">
+                        <i class="flaticon-facebook29"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="noi-dung">
+            <div class="noi-dung-status">
+                <div class="thong-tin">
+                    <img src="iphone">
+                    <span>Ngoc Anhh</span>
+                </div>
+                <p>Nhìn cái mặt chả còn giống cái mặt nữa. Thảm quá. :(((
+                    Làm sao nhẵn mịn trắng sáng như ngày xưa
+                </p>
+                <ul style="font-size: 80%">
+                    <li><a href="#"><b>Thich</b></a> </li>
+                    <li><a href="#"><b>Binh luan</b></a> </li>
+                    <li><a href="#"><b>Chia se</b></a> </li>
+                </ul>
+            </div>
+            <div class="binh-luan">
+                <p style="font-size: 80%"><a href="#">Ngoc Anhh</a> va <a href="#">10 nguoi khac</a> thich noi dung nay </p>
+                <div class="noi-dung-binh-luan">
+                    <img src="iphone">
+                    <div class="viet-binh-luan">
+                        <input type="text" placeholder="viet binh luan">
+                        <i class="flaticon-facebook29"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="noi-dung">
+            <div class="noi-dung-status">
+                <div class="thong-tin">
+                    <img src="iphone">
+                    <span>Ngoc Anhh</span>
+                </div>
+                <p>Nhìn cái mặt chả còn giống cái mặt nữa. Thảm quá. :(((
+                    Làm sao nhẵn mịn trắng sáng như ngày xưa
+                </p>
+                <ul style="font-size: 80%">
+                    <li><a href="#"><b>Thich</b></a> </li>
+                    <li><a href="#"><b>Binh luan</b></a> </li>
+                    <li><a href="#"><b>Chia se</b></a> </li>
+                </ul>
+            </div>
+            <div class="binh-luan">
+                <p style="font-size: 80%"><a href="#">Ngoc Anhh</a> va <a href="#">10 nguoi khac</a> thich noi dung nay </p>
+                <div class="noi-dung-binh-luan">
+                    <img src="iphone">
+                    <div class="viet-binh-luan">
+                        <input type="text" placeholder="viet binh luan">
+                        <i class="flaticon-facebook29"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end noi dung-->
+    </div>
+    <!--end content-->
+
+
+    <div class="advertise"></div>
+
+
+    <!--news-chat-->
+    <div class="news-chat">
+        <div class="news">
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+            <div class="news-item">
+                <img src="iphone">
+                <p><span>Le nhu lai </span>thich bai biet cua ban</p>
+                <div class="clear-both"></div>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="chat-item">
+                <img src="iphone">
+                <span>Thao dang</span>
+                <div class="clear-both"></div>
+            </div>
+            <div class="chat-item">
+                <img src="iphone">
+                <span>Thao dang</span>
+                <div class="clear-both"></div>
+            </div>
+            <div class="chat-item">
+                <img src="iphone">
+                <span>Thao dang</span>
+                <div class="clear-both"></div>
+            </div>
+            <div class="chat-item">
+                <img src="iphone">
+                <span>Thao dang</span>
+                <div class="clear-both"></div>
+            </div>
+            <div class="chat-item">
+                <img src="iphone">
+                <span>Thao dang</span>
+                <div class="clear-both"></div>
+            </div>
+            <div class="chat-item">
+                <img src="iphone">
+                <span>Thao dang</span>
+                <div class="clear-both"></div>
+            </div>
+            <div class="chat-item">
+                <img src="iphone">
+                <span>Thao dang</span>
+                <div class="clear-both"></div>
+            </div>
+            <div class="chat-item">
+                <img src="iphone">
+                <span>Thao dang</span>
+                <div class="clear-both"></div>
+            </div>
+            <div class="chat-item">
+                <img src="iphone">
+                <span>Thao dang</span>
+                <div class="clear-both"></div>
+            </div>
+            <div class="chat-item">
+                <img src="iphone">
+                <span>Thao dang</span>
+                <div class="clear-both"></div>
+            </div>
+
+        </div>
+        <div class="seach-news-chat">
+            <i class="flaticon-magnifying-glass16"></i>
+            <input type="text" placeholder="Tim kiem...">
+            <i class="flaticon-gear39"></i>
+            <div class="clear-both"></div>
+        </div>
+    </div>
+
+</body>
+</html>
